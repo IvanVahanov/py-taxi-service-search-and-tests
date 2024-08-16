@@ -76,6 +76,10 @@ class CarListView(LoginRequiredMixin, generic.ListView):
         return queryset
 
 
+class CarDetailView(LoginRequiredMixin, generic.DetailView):
+    model = Car
+
+
 class CarCreateView(LoginRequiredMixin, generic.CreateView):
     model = Car
     form_class = CarForm
