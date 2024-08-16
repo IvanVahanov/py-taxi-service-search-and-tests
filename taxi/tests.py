@@ -22,7 +22,7 @@ class SearchFeatureTests(TestCase):
             license_number="XYZ67890"
         )
 
-        self.client.login(username='john_doe', password='password123')
+        self.client.login(username="john_doe", password="password123")
 
     def test_search_manufacturer(self):
         response = self.client.get(
